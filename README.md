@@ -1,15 +1,11 @@
-<p align="center">
-  <img src="assets/banner.png" alt="Mini LLM From Scratch Banner" width="100%">
-</p>
-
 <h1 align="center">🧠 Mini LLM From Scratch</h1>
 
 <p align="center">
-  <strong>Understand • Build • Train • Generate • Learn</strong>
+<strong>Understand • Build • Train • Generate • Learn</strong>
 </p>
 
 <p align="center">
-An educational implementation of a <strong>GPT-style Transformer Language Model</strong> built from scratch using <strong>Python</strong> and <strong>PyTorch</strong>.
+An educational implementation of a <strong>GPT-style Decoder-Only Transformer Language Model</strong> built from scratch using <strong>Python</strong> and <strong>PyTorch</strong>.
 </p>
 
 <p align="center">
@@ -25,69 +21,55 @@ An educational implementation of a <strong>GPT-style Transformer Language Model<
 
 # 📖 Overview
 
-Modern AI frameworks make it easy to use Large Language Models, but they often hide the concepts that matter most.
+Large Language Models such as GPT have transformed the way computers understand and generate human language. While modern AI libraries make these models easy to use, they often hide the underlying concepts that make them work.
 
-This project was created to better understand how **GPT-style Transformer language models** work by implementing their core components from scratch using Python and PyTorch.
+This repository was created to explore those concepts by implementing the core components of a **GPT-style Decoder-Only Transformer** from scratch using **Python** and **PyTorch**.
 
-Rather than relying on high-level model libraries, the project focuses on the fundamental building blocks behind modern language models, making it easier to explore how text is processed, how attention works, and how a model learns to generate the next token.
+Instead of treating the model as a black box, the project focuses on understanding each stage of the pipeline—from tokenization and embeddings to self-attention, Transformer blocks, training, and autoregressive text generation.
 
-Whether you're a student, a beginner in Deep Learning, or someone curious about Transformer architectures, this repository is designed to provide a practical learning experience through clean, modular code.
+The implementation is intentionally simple, modular, and beginner-friendly, making it easier to understand how modern language models work internally.
 
 ---
 
 # 🎓 Educational Notice
 
 > [!NOTE]
-> This is an educational project created for learning and experimentation.
+> This repository is an educational implementation created for learning and experimentation.
 >
-> It intentionally simplifies many aspects of production-scale language models so that the core Transformer architecture can be understood more easily.
+> The project intentionally simplifies several aspects of production-scale language models so that the core Transformer architecture can be studied more easily.
 >
-> The focus is on **clarity**, **modularity**, and **understanding**, rather than achieving state-of-the-art performance.
+> The primary goal is to understand **how GPT-style language models work**, not to reproduce the scale or performance of commercial LLMs.
 
 ---
 
-# ⭐ Why This Project?
+# ⭐ Why I Built This Project
 
-There are many tutorials explaining **what Transformers are**, but comparatively few show **how to build one from scratch**.
+When I started learning about Large Language Models, I found many resources explaining the theory but very few that demonstrated how to build one step by step.
 
-The primary goal of this repository is to bridge that gap.
+This project began as a personal learning exercise to better understand the internal mechanics of Transformer-based language models through implementation rather than abstraction.
 
-Instead of treating a language model as a black box, this project walks through the major building blocks that make GPT-style models possible.
-
-By exploring the implementation, readers can understand:
-
-- How raw text becomes numerical tokens
-- How a vocabulary is created
-- How embeddings represent words
-- Why positional information is important
-- How self-attention captures context
-- How Transformer blocks process sequences
-- How next-token prediction works
-- How autoregressive text generation is performed
-
-The emphasis is on learning through implementation rather than simply using existing models.
+By documenting the development process and organizing the code into small, understandable modules, I hope this repository can also serve as a useful learning resource for other students and developers beginning their journey into modern AI.
 
 ---
 
 # 🚀 What You'll Learn
 
-This project provides a practical introduction to the core concepts behind modern Transformer-based language models.
+By exploring this project, you'll gain practical experience with the core building blocks behind GPT-style language models, including:
 
-By following the implementation, you'll learn how to:
+- ✅ Tokenization and Vocabulary Creation
+- ✅ Text Encoding and Decoding
+- ✅ Word Embeddings
+- ✅ Positional Information
+- ✅ Masked Self-Attention
+- ✅ Multi-Head Attention
+- ✅ Feed Forward Networks
+- ✅ Transformer Decoder Blocks
+- ✅ Next-Token Prediction
+- ✅ Model Training with PyTorch
+- ✅ Checkpoint Saving and Loading
+- ✅ Autoregressive Text Generation
 
-- ✅ Build a custom tokenizer
-- ✅ Create a vocabulary from raw text
-- ✅ Encode and decode text
-- ✅ Prepare datasets for next-token prediction
-- ✅ Implement embedding layers
-- ✅ Add positional information
-- ✅ Build masked self-attention
-- ✅ Implement multi-head attention
-- ✅ Create Transformer blocks
-- ✅ Train a small GPT-style language model
-- ✅ Save and load model checkpoints
-- ✅ Generate text autoregressively
-- ✅ Understand the complete inference pipeline
+Each concept is implemented in code so you can understand both the theory and the implementation.
 
 ---
 
@@ -95,282 +77,159 @@ By following the implementation, you'll learn how to:
 
 <table>
 <tr>
+
 <td width="50%">
 
-### 🧠 Educational Implementation
+### 🧠 Built for Learning
 
-Designed to help learners understand how Transformer-based language models work internally through implementation rather than abstraction.
+The project focuses on understanding the internal working of GPT-style language models through implementation rather than relying on high-level AI libraries.
 
 </td>
 
 <td width="50%">
 
-### ⚡ Built with PyTorch
+### ⚡ Pure Python & PyTorch
 
-A clean and modular implementation using Python and PyTorch, making it easy to read, modify, and extend.
+Implemented using Python and PyTorch with clean, readable, and modular code that is easy to explore and extend.
 
 </td>
+
 </tr>
 
 <tr>
+
 <td>
 
 ### 📚 Beginner Friendly
 
-The codebase is organized into small, understandable modules so that readers can explore one concept at a time.
+The codebase is organized into small components, allowing readers to learn one concept at a time without being overwhelmed.
 
 </td>
 
 <td>
 
-### 🏗 Modular Architecture
+### 🏗 Modular Design
 
-Each major component of the model is separated into its own module to encourage experimentation and easier understanding.
+Tokenizer, embeddings, attention layers, Transformer blocks, training, and inference are implemented as separate modules for better readability.
 
 </td>
+
 </tr>
 
 <tr>
+
 <td>
 
-### 🌱 Learning Focused
+### 🌱 Educational Focus
 
-The project prioritizes clear explanations and educational value over production-scale optimization.
+The repository prioritizes clarity, simplicity, and understanding over large-scale optimization or production deployment.
 
 </td>
 
 <td>
 
-### 🔧 Easy to Extend
+### 🔧 Easy to Experiment
 
-The implementation can be expanded with additional techniques such as Byte Pair Encoding (BPE), RoPE, Flash Attention, GPU training, and other improvements.
+The modular structure makes it straightforward to explore ideas such as BPE tokenization, RoPE, Flash Attention, or larger model configurations.
 
 </td>
+
 </tr>
+
 </table>
 
 ---
 
 # 👨‍🎓 Who Is This Project For?
 
-This repository is intended for anyone interested in understanding how modern language models work, including:
+This project is suitable for:
 
-- Computer Science students
-- Beginners learning Machine Learning or Deep Learning
-- Developers exploring Natural Language Processing
-- Students preparing for technical interviews
-- Master's students studying Artificial Intelligence
-- Open-source contributors
-- Anyone curious about Transformer architectures
+- 🎓 Computer Science students
+- 🤖 Beginners learning Machine Learning or Deep Learning
+- 💬 Developers interested in Natural Language Processing
+- 📖 Students exploring Transformer architectures
+- 🎯 Learners preparing for AI or Software Engineering interviews
+- 🔬 Master's students interested in AI research
+- ❤️ Anyone curious about how GPT-style language models work
 
-No prior experience with Large Language Models is required, although a basic understanding of Python and neural networks will be helpful.
+A basic understanding of Python is recommended, but prior experience with Large Language Models is **not required**.
 
 ---
 
 # 🗺 Learning Roadmap
 
-This repository follows a step-by-step learning path.
+```text
+Raw Text
+     │
+     ▼
+Tokenization
+     │
+     ▼
+Vocabulary
+     │
+     ▼
+Token IDs
+     │
+     ▼
+Embeddings
+     │
+     ▼
+Positional Information
+     │
+     ▼
+Masked Self-Attention
+     │
+     ▼
+Multi-Head Attention
+     │
+     ▼
+Transformer Blocks
+     │
+     ▼
+Training
+     │
+     ▼
+Checkpoint Saving
+     │
+     ▼
+Text Generation
+```
+
+Each stage is implemented independently, making it easier to understand how every component contributes to the complete language model.
+
+---
+
+# 🏗 Architecture Overview
+
+The implementation follows the high-level workflow of a decoder-only Transformer language model.
+
+Rather than presenting the model as a single system, the project separates each major component into individual modules. This makes it easier to understand how data moves through the model during training and text generation.
+
+> **Note:** This is a simplified educational implementation designed to explain the core ideas behind Transformer-based language models. It does not aim to replicate the architecture, scale, or performance of modern production LLMs.
+
+---
+
+# ⚙️ Project Workflow
+
+The project is organized as a sequence of learning steps.
 
 ```text
 Raw Text
     │
     ▼
-Tokenizer
+Tokenization
     │
     ▼
 Vocabulary
     │
     ▼
-Token IDs
-    │
-    ▼
-Embeddings
-    │
-    ▼
-Positional Information
-    │
-    ▼
-Self-Attention
-    │
-    ▼
-Multi-Head Attention
-    │
-    ▼
-Transformer Blocks
-    │
-    ▼
-Training
-    │
-    ▼
-Checkpointing
-    │
-    ▼
-Autoregressive Text Generation
-```
-
-Each stage is implemented as a separate module so it can be understood independently before moving to the next concept.
-
----
-
-# 📑 Repository Navigation
-
-| Section | Description |
-|----------|-------------|
-| 🎥 Demo | Project demonstration *(Coming Soon)* |
-| ⭐ Overview | Project introduction and goals |
-| 🚀 What You'll Learn | Skills and concepts covered |
-| 🏗 Architecture | High-level Transformer pipeline |
-| ⚙️ Workflow | End-to-end execution flow |
-| 📂 Project Structure | Repository organization |
-| 🚀 Installation | Setup instructions |
-| 💻 Usage | Training and inference |
-| 📸 Screenshots | Project walkthrough |
-| 📊 Configuration | Model hyperparameters |
-| 🔮 Roadmap | Planned improvements |
-| 🤝 Contributing | Contribution guidelines |
-| 👨‍💻 About the Author | Background and motivation |
-
----
-# 🏗 Architecture Overview
-
-The project follows the same high-level workflow used by decoder-only Transformer language models.
-
-The implementation is intentionally modular so that each stage can be understood independently before combining everything into a complete language model.
-
-```text
-                    Input Text
-                         │
-                         ▼
-                 Text Tokenization
-                         │
-                         ▼
-                  Vocabulary Lookup
-                         │
-                         ▼
-                    Token IDs
-                         │
-                         ▼
-                 Embedding Layer
-                         │
-                         ▼
-             Positional Information
-                         │
-                         ▼
-          Transformer Decoder Blocks
-        (Masked Self-Attention + FFN)
-                         │
-                         ▼
-                  Linear Projection
-                         │
-                         ▼
-                     Softmax
-                         │
-                         ▼
-               Predicted Next Token
-                         │
-                         ▼
-              Autoregressive Generation
-```
-
-Rather than treating this pipeline as a single black box, every stage is implemented separately so it can be explored and modified.
-
----
-# 🏗 Architecture Overview
-
-<p align="center">
-  <img src="assets/architecture.png" alt="Transformer Architecture" width="95%">
-</p>
-
----
-
-# ⚙️ Complete Workflow
-
-<p align="center">
-  <img src="assets/workflow.png" alt="Workflow" width="95%">
-</p>
-
----
-
-# 📸 Project Walkthrough
-
-## 📂 Project Structure
-
-<p align="center">
-  <img src="assets/project-structure.png" alt="Project Structure" width="95%">
-</p>
-
----
-
-## 🔤 Vocabulary Building
-
-<p align="center">
-  <img src="assets/vocabulary.png" alt="Vocabulary" width="95%">
-</p>
-
----
-
-## 📊 Dataset Preparation
-
-<p align="center">
-  <img src="assets/dataset.png" alt="Dataset" width="95%">
-</p>
-
----
-
-## ⚙️ Model Configuration
-
-<p align="center">
-  <img src="assets/config.png" alt="Configuration" width="95%">
-</p>
-
----
-
-## 🚀 Training Started
-
-<p align="center">
-  <img src="assets/training-start.png" alt="Training Started" width="95%">
-</p>
-
----
-
-## ✅ Training Complete
-
-<p align="center">
-  <img src="assets/training-complete.png" alt="Training Complete" width="95%">
-</p>
-
----
-
-## 💬 Text Generation
-
-<p align="center">
-  <img src="assets/inference.png" alt="Inference" width="95%">
-</p>
-
-# ⚙️ Project Workflow
-
-The project is organized as a sequence of small learning modules.
-
-```text
-Raw Text
-    │
-    ▼
-Tokenizer
-    │
-    ▼
-Vocabulary Builder
-    │
-    ▼
 Dataset Preparation
-    │
-    ▼
-Model Configuration
     │
     ▼
 Embedding Layer
     │
     ▼
-Transformer Blocks
+Transformer Decoder
     │
     ▼
 Training
@@ -379,68 +238,52 @@ Training
 Checkpoint Saving
     │
     ▼
-Inference
-    │
-    ▼
-Generated Text
+Text Generation
 ```
 
-Each module builds upon the previous one, making it easier to understand how the complete model works.
+Each module can be studied independently before understanding how they work together as a complete pipeline.
 
 ---
 
 # 🧩 Core Components
 
-| Component | Purpose |
-|----------|---------|
-| 🔤 Tokenizer | Converts raw text into numerical token IDs |
-| 📚 Vocabulary Builder | Creates a vocabulary from the training corpus |
-| 📄 Dataset | Generates input-target pairs for next-token prediction |
-| 🔢 Embedding Layer | Learns dense numerical representations of words |
-| 📍 Positional Information | Preserves the order of tokens within a sequence |
-| 🎯 Masked Self-Attention | Allows each token to attend to previous context |
-| 👀 Multi-Head Attention | Learns multiple contextual relationships simultaneously |
-| ⚡ Feed Forward Network | Refines token representations after attention |
-| 🏗 Transformer Block | Combines attention, normalization, and feed-forward layers |
-| 💾 Checkpointing | Saves model parameters during training |
-| 💬 Inference | Generates text one token at a time |
+| Component | Description |
+|-----------|-------------|
+| 🔤 Tokenizer | Converts text into tokens |
+| 📚 Vocabulary | Maps tokens to numerical IDs |
+| 📄 Dataset | Creates training samples for next-token prediction |
+| 🔢 Embedding Layer | Learns vector representations of tokens |
+| 📍 Positional Information | Preserves token order within a sequence |
+| 👀 Masked Self-Attention | Allows tokens to attend to previous context |
+| ⚡ Feed Forward Network | Refines token representations |
+| 🏗 Transformer Block | Combines attention and feed-forward layers |
+| 💾 Checkpoints | Saves training progress |
+| 💬 Inference | Generates text token by token |
 
 ---
 
 # 📂 Project Structure
 
+> *(Keep your existing project structure image here.)*
+
 ```text
 Mini-LLM-From-Scratch/
 
-│
-├── assets/             # Images, GIFs and documentation assets
-├── checkpoints/        # Saved model weights
-├── data/               # Training corpus
-├── tokenizer/          # Tokenizer and vocabulary builder
-├── model/              # Transformer implementation
-├── training/           # Dataset preparation and training pipeline
-├── inference/          # Text generation
-├── utils/              # Configuration and helper utilities
-│
-├── main.py             # Entry point
+├── assets/
+├── checkpoints/
+├── data/
+├── tokenizer/
+├── model/
+├── training/
+├── inference/
+├── utils/
+
+├── main.py
 ├── requirements.txt
 └── README.md
 ```
 
----
-
-# 📁 Folder Description
-
-| Folder | Description |
-|---------|-------------|
-| assets | Images and documentation resources |
-| checkpoints | Saved model checkpoints |
-| data | Training dataset |
-| tokenizer | Tokenization and vocabulary creation |
-| model | Transformer model implementation |
-| training | Dataset creation and model training |
-| inference | Text generation pipeline |
-| utils | Shared helper functions and configuration |
+The repository is organized into small, focused modules to make the code easier to understand and extend.
 
 ---
 
@@ -448,24 +291,15 @@ Mini-LLM-From-Scratch/
 
 ## Prerequisites
 
-Before running the project, ensure the following software is installed.
+Before running the project, install:
 
-| Software | Version |
-|----------|---------|
-| Python | 3.10 or later |
-| Git | Latest |
-| pip | Latest |
-
-Verify your installation.
-
-```bash
-python --version
-pip --version
-```
+- Python 3.10 or later
+- Git
+- pip
 
 ---
 
-# 📥 Clone the Repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/ENAYATULLA/Mini-LLM-From-Scratch.git
@@ -475,7 +309,7 @@ cd Mini-LLM-From-Scratch
 
 ---
 
-# 📦 Create a Virtual Environment
+## Create a Virtual Environment
 
 ### Windows
 
@@ -495,7 +329,7 @@ source venv/bin/activate
 
 ---
 
-# 📚 Install Dependencies
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -505,246 +339,182 @@ pip install -r requirements.txt
 
 # ▶ Running the Project
 
-The project can be explored through the following stages.
+The project can be explored in the following stages.
 
-| Step | Description |
-|------|-------------|
-| 1 | Build vocabulary |
-| 2 | Prepare dataset |
-| 3 | Configure the model |
-| 4 | Train the language model |
-| 5 | Generate text |
+1. Build the vocabulary
+2. Prepare the dataset
+3. Configure the model
+4. Train the model
+5. Generate text
 
 ---
 
-# 🔤 Step 1 — Build the Vocabulary
+# 🔤 Vocabulary & Tokenization
 
-Run:
+The tokenizer converts raw text into numerical token IDs that can be processed by the neural network.
 
-```bash
-python main.py
-```
-
-This step:
-
-- Reads the training corpus
-- Builds the vocabulary
-- Assigns token IDs
-- Encodes text into numerical form
-- Demonstrates encoding and decoding
+The current implementation uses a **word-level tokenizer**, which keeps the code simple and suitable for learning.
 
 ---
 
-# 📊 Step 2 — Prepare the Dataset
+# 📊 Dataset Preparation
 
-Run:
+Training data is converted into input-target pairs for **next-token prediction** using a sliding window over the text corpus.
 
-```bash
-python main.py
-```
-
-The dataset is prepared for **next-token prediction** by creating input-target pairs using a sliding window over the training text.
+This is one of the fundamental training objectives used by decoder-only language models.
 
 ---
 
-# ⚙️ Step 3 — Configure the Model
+# 🏋️ Training
 
-Run:
+The model is trained using **PyTorch**.
 
-```bash
-python main.py
-```
+During training:
 
-The configuration defines the core hyperparameters used by the model, including:
+- Input sequences are passed through the Transformer.
+- The model predicts the next token.
+- Loss is calculated using cross-entropy.
+- Model parameters are updated through backpropagation.
+- Checkpoints are saved periodically.
 
-- Embedding dimension
-- Number of attention heads
-- Number of Transformer layers
-- Sequence length
-- Learning rate
-- Device configuration
+The default configuration is intentionally lightweight so the project can run on a standard personal computer.
 
 ---
 
-# 🏋️ Step 4 — Train the Model
+# 💬 Text Generation
 
-Run:
+After training, the model generates text one token at a time.
 
-```bash
-python -m training.train
-```
+Generation starts from an initial prompt and repeatedly predicts the next token until the desired sequence length is reached.
 
-During training, the model learns to predict the next token in a sequence.
-
-Model checkpoints are automatically saved inside the `checkpoints/` directory so training progress can be preserved.
+This demonstrates the basic principle of **autoregressive text generation**.
 
 ---
 
-# 💬 Step 5 — Generate Text
+# ⚙️ Current Configuration
 
-Run:
-
-```bash
-python -m inference.generate
-```
-
-Provide a text prompt such as:
-
-```text
-Artificial Intelligence
-```
-
-The trained model generates text one token at a time using autoregressive next-token prediction.
-
----
-
-# 📊 Current Model Configuration
-
-| Hyperparameter | Value |
-|---------------|-------|
-| Architecture | GPT-style Decoder-only Transformer |
-| Embedding Dimension | 64 |
+| Parameter | Value |
+|-----------|------:|
+| Architecture | Decoder-only Transformer |
+| Embedding Size | 64 |
 | Attention Heads | 4 |
 | Transformer Layers | 2 |
-| Tokenizer | Word-Level |
 | Framework | PyTorch |
 | Training Objective | Next-Token Prediction |
 | Device | CPU |
 
-> **Note:** These values are intentionally kept small to make the implementation easier to understand and run on a standard personal computer. They can be modified for experimentation.
+These values are intentionally small to keep the implementation approachable for learning and experimentation.
 
 ---
 
 # 📸 Project Walkthrough
 
-The following screenshots demonstrate different stages of the project.
+*(Keep all your existing screenshots and GIFs exactly as they are.)*
+
+Suggested order:
 
 - 📂 Project Structure
 - 🔤 Vocabulary Creation
 - 📊 Dataset Preparation
 - ⚙️ Model Configuration
-- 🏋️ Training Process
+- 🚀 Training Progress
 - 💬 Text Generation
 
-> 🎥 A complete walkthrough video will be added in a future update.
+> A walkthrough video will be added in a future update.
 
----
 # 📚 Learning Outcomes
 
-By exploring this repository and experimenting with the code, readers can gain practical experience with:
+This project helped me strengthen my understanding of several important concepts in modern Natural Language Processing and Deep Learning, including:
 
 - Transformer Architecture
-- GPT-style Decoder Models
+- Decoder-only Language Models
+- Tokenization and Vocabulary Building
 - Word Embeddings
 - Positional Information
 - Masked Self-Attention
 - Multi-Head Attention
 - Feed Forward Networks
-- Layer Normalization
 - Residual Connections
-- Cross-Entropy Loss
+- Layer Normalization
 - Next-Token Prediction
 - Autoregressive Text Generation
 - Model Training with PyTorch
-- Software Engineering Best Practices
-- Git & GitHub Project Organization
+- Software Project Organization
 
-Rather than treating these concepts as theory alone, the project demonstrates how they work together in a complete implementation.
+While this implementation is intentionally simplified, the concepts explored here provide a solid foundation for understanding larger Transformer-based language models.
 
 ---
 
-# 🔮 Future Improvements
+# 🔮 Future Learning Goals
 
-This repository is intended to evolve over time as I continue learning and exploring modern language model architectures.
-
-Some planned improvements include:
+As I continue learning about Large Language Models, I plan to gradually improve this project by exploring topics such as:
 
 - Byte Pair Encoding (BPE)
-- SentencePiece Tokenizer
+- SentencePiece Tokenization
 - Rotary Positional Embeddings (RoPE)
 - Flash Attention
-- GPU Training Support
+- GPU Training
 - Mixed Precision Training
-- Beam Search
-- Top-k Sampling
-- Top-p Sampling
-- Temperature Sampling Improvements
-- Larger Training Dataset
-- Streamlit / Web Interface
-- Model Evaluation Utilities
-- Improved Documentation and Visualizations
+- Better Sampling Strategies
+- Larger Training Datasets
+- Model Evaluation
+- Interactive Web Interface
+- Improved Documentation
+- More Educational Visualizations
 
-These features are planned for future learning and experimentation and may be implemented gradually.
+These are learning goals rather than fixed milestones, and I plan to explore them step by step.
 
 ---
 
 # 🤝 Contributing
 
-Contributions are always welcome.
+Contributions are welcome.
 
-If you would like to improve this project, fix bugs, enhance documentation, or add educational features, feel free to contribute.
+If you notice a bug, find an issue in the documentation, or have ideas that could make the project easier to understand, feel free to open an Issue or submit a Pull Request.
 
-A typical contribution workflow is:
-
-```text
-Fork Repository
-      │
-      ▼
-Create Feature Branch
-      │
-      ▼
-Commit Changes
-      │
-      ▼
-Push Branch
-      │
-      ▼
-Open Pull Request
-```
-
-Please keep contributions focused, well documented, and easy to understand so the repository remains beginner friendly.
+Please keep contributions beginner-friendly, well documented, and focused on improving the educational value of the repository.
 
 ---
 
 # ❓ Frequently Asked Questions
 
-## Is this a production-ready language model?
+## Is this a production-ready Large Language Model?
 
 No.
 
-This project is designed for educational purposes. The implementation focuses on helping readers understand the core ideas behind Transformer-based language models rather than reproducing the capabilities of large production systems.
+This repository is an educational implementation created to understand the core ideas behind GPT-style Transformer language models.
 
 ---
 
-## Does this project use Hugging Face models?
+## Does this repository use pre-trained models?
 
 No.
 
-The core components are implemented directly in PyTorch to provide a better understanding of how a Transformer-based language model works internally.
+The implementation focuses on building the core architecture directly in PyTorch for learning purposes.
 
 ---
 
-## Is this project suitable for beginners?
+## Can I modify this project?
 
 Yes.
 
-If you are comfortable with basic Python and have some familiarity with neural networks, this repository provides a practical introduction to Transformer architectures.
+The modular design makes it easier to experiment with different tokenizers, attention mechanisms, training strategies, or model configurations.
 
 ---
 
-## Can I build upon this project?
+## Is this suitable for beginners?
 
-Absolutely.
+Yes.
 
-The modular structure makes it easy to experiment with new ideas such as different tokenizers, positional encoding methods, attention mechanisms, or training strategies.
+The repository is intended for students and developers who want to understand how Transformer language models work by reading and experimenting with the code.
 
 ---
 
-# 🌟 Support
+# ⭐ Support
 
-If this repository helps you understand Transformer-based language models or serves as a useful learning resource, consider giving it a ⭐ on GitHub.
+If you found this repository helpful, consider giving it a ⭐ on GitHub.
 
-Your support motivates future improvements and helps more learners discover the project.
+Your support encourages me to continue improving the project and documenting my learning journey.
 
 ---
 
@@ -752,38 +522,25 @@ Your support motivates future improvements and helps more learners discover the 
 
 ## Enayat Ullah
 
-Computer Science Graduate
+Computer Science Graduate | Aspiring Software Engineer | AI Learner
 
-Interested in:
+I enjoy learning about Artificial Intelligence, Machine Learning, and Software Engineering by building practical projects.
 
-- Artificial Intelligence
-- Machine Learning
-- Deep Learning
-- Natural Language Processing
-- Large Language Models
-- Software Engineering
+This repository represents one step in my learning journey toward understanding Transformer-based language models through implementation.
 
-### Why I Built This Project
+Rather than treating modern AI systems as black boxes, I enjoy exploring how they work internally and documenting what I learn along the way.
 
-As I began learning about Transformer-based language models, I realized that many tutorials explained the concepts but very few demonstrated how to implement them step by step.
+I believe the best way to learn is to build projects, experiment with ideas, and continuously improve through practice.
 
-I created **Mini LLM From Scratch** as a personal learning project to better understand the internal working of GPT-style Transformers through implementation.
-
-The goal of this repository is not to replicate state-of-the-art language models, but to build a clear and approachable educational implementation that can help students, beginners, and developers strengthen their understanding of modern AI systems.
-
-I believe that one of the best ways to learn is by building, experimenting, and documenting what you discover.
-
-I hope this project makes the journey into Transformer architectures a little more approachable for others who are learning as well.
+If this repository helps another student understand Transformers a little better, then it has achieved its purpose.
 
 ---
 
 # 🌐 Connect With Me
 
-- GitHub
-- LinkedIn
-- Portfolio
-
-*(Links can be added here.)*
+- 💼 LinkedIn: *(Add your profile link)*
+- 💻 GitHub: *(Add your GitHub profile link)*
+- 🌍 Portfolio: *(Add your portfolio link)*
 
 ---
 
@@ -791,25 +548,27 @@ I hope this project makes the journey into Transformer architectures a little mo
 
 This project is licensed under the **MIT License**.
 
-You are welcome to use, study, modify, and build upon this project in accordance with the license terms.
+You are free to use, study, modify, and build upon this repository in accordance with the terms of the license.
 
 ---
 
 # 🙏 Acknowledgements
 
-This project was inspired by the many researchers, educators, and open-source contributors who have helped make modern AI more accessible through their work.
+I would like to thank the open-source community, researchers, educators, and developers whose articles, papers, repositories, and educational resources have made learning modern AI more accessible.
 
-Special thanks to the open-source community for sharing knowledge and encouraging collaborative learning.
+Their work has inspired this project and continues to support learners around the world.
 
 ---
 
-# ⭐ Final Note
+# 📌 Final Note
 
-If you're also beginning your journey into Large Language Models, I hope this repository helps you understand not just **how to use** a Transformer, but **how it works**.
+This repository is part of my personal learning journey.
 
-Learning AI is a continuous process, and this project reflects my own journey of exploring, implementing, and improving one step at a time.
+It is not intended to compete with production-scale language models or replace existing frameworks.
 
-If you have suggestions, ideas, or feedback, feel free to open an issue or contribute to the project.
+Instead, it is an attempt to better understand the ideas behind Transformer architectures by implementing them step by step.
+
+If you have suggestions, feedback, or ideas for improvement, feel free to open an Issue or start a discussion.
 
 Happy Learning! 🚀
 
@@ -821,10 +580,10 @@ Made with ❤️ using Python & PyTorch
 
 <br><br>
 
-<strong>Designed and Developed by</strong>
+<strong>Built as a Learning Project by</strong>
 
 <h3 align="center">Enayat Ullah</h3>
 
-Computer Science Graduate • AI & Software Engineering Enthusiast
+Computer Science Graduate • AI Learner • Open Source Enthusiast
 
 </p>
