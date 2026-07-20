@@ -275,6 +275,77 @@ The implementation is intentionally modular so that each stage can be understood
 Rather than treating this pipeline as a single black box, every stage is implemented separately so it can be explored and modified.
 
 ---
+# 🏗 Architecture Overview
+
+<p align="center">
+  <img src="assets/architecture.png" alt="Transformer Architecture" width="95%">
+</p>
+
+---
+
+# ⚙️ Complete Workflow
+
+<p align="center">
+  <img src="assets/workflow.png" alt="Workflow" width="95%">
+</p>
+
+---
+
+# 📸 Project Walkthrough
+
+## 📂 Project Structure
+
+<p align="center">
+  <img src="assets/project-structure.png" alt="Project Structure" width="95%">
+</p>
+
+---
+
+## 🔤 Vocabulary Building
+
+<p align="center">
+  <img src="assets/vocabulary.png" alt="Vocabulary" width="95%">
+</p>
+
+---
+
+## 📊 Dataset Preparation
+
+<p align="center">
+  <img src="assets/dataset.png" alt="Dataset" width="95%">
+</p>
+
+---
+
+## ⚙️ Model Configuration
+
+<p align="center">
+  <img src="assets/config.png" alt="Configuration" width="95%">
+</p>
+
+---
+
+## 🚀 Training Started
+
+<p align="center">
+  <img src="assets/training-start.png" alt="Training Started" width="95%">
+</p>
+
+---
+
+## ✅ Training Complete
+
+<p align="center">
+  <img src="assets/training-complete.png" alt="Training Complete" width="95%">
+</p>
+
+---
+
+## 💬 Text Generation
+
+<p align="center">
+  <img src="assets/inference.png" alt="Inference" width="95%">
+</p>
 
 # ⚙️ Project Workflow
 
